@@ -1,0 +1,10 @@
+import Timesheets from "@/components/worker-dashboard/Timesheets";
+import WorkerDashboardLayout from "@/components/layouts/WorkerDashboardLayout";
+
+export default function WorkerTimesheetsStory() {
+  return (
+    <WorkerDashboardLayout>
+      <Timesheets />
+    </WorkerDashboardLayout>
+  );
+}
