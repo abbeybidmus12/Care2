@@ -41,7 +41,10 @@ function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
           {import.meta.env.VITE_TEMPO === "true" && (
-            <Route path="/tempobook/*" element={useRoutes(routes)} />
+            <>
+              <Route path="/tempobook/*" element={useRoutes(routes)} />
+              <Route path="/tempobook/*" />
+            </>
           )}
           <Route path="/" element={<WelcomePage />} />
           <Route path="/worker-signin" element={<WorkerSignIn />} />
